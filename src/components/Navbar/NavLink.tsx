@@ -5,7 +5,7 @@ interface NavListItemProps {
 const NavLink = (props: NavListItemProps) => {
   const { text } = props;
   return (
-    <li className="text-base">
+    <li className="text-base text-blue-300">
       <a href="#">{text}</a>
     </li>
   );
