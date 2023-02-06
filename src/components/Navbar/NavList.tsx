@@ -7,7 +7,7 @@ interface NavListProps {
 const NavList = (props: NavListProps) => {
   const { items } = props;
   return (
-    <ul>
+    <ul className="flex w-1/2 flex-none flex-row flex-nowrap justify-evenly">
       {items.map((item) => (
         <NavListItem text={item} key={item} />
       ))}

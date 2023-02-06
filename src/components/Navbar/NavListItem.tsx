@@ -5,7 +5,7 @@ interface NavListItemProps {
 const NavListItem = (props: NavListItemProps) => {
   const { text } = props;
   return (
-    <li>
+    <li className="text-base">
       <a href="#">{text}</a>
     </li>
   );
