@@ -1,4 +1,4 @@
-import NavList from "./NavList";
+import NavLinkList from "./NavLinkList";
 import Logo from "./Logo";
 
 const Navbar = () => {
@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className="flex h-24 w-10/12 flex-row items-center justify-start border-b-2 border-solid border-blue-200">
       <Logo />
-      <NavList items={navItems} />
+      <NavLinkList items={navItems} />
     </div>
   );
 };

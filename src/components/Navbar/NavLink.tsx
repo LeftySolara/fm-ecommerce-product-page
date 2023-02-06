@@ -2,7 +2,7 @@ interface NavListItemProps {
   text: string;
 }
 
-const NavListItem = (props: NavListItemProps) => {
+const NavLink = (props: NavListItemProps) => {
   const { text } = props;
   return (
     <li className="text-base">
@@ -11,4 +11,4 @@ const NavListItem = (props: NavListItemProps) => {
   );
 };
 
-export default NavListItem;
+export default NavLink;
