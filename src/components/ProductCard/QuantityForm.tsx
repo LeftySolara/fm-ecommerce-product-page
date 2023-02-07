@@ -48,7 +48,7 @@ const QuantityForm = () => {
       <div>
         <button
           type="submit"
-          className="flex w-64 flex-row justify-center rounded-lg bg-orange p-4 font-[700] text-white shadow-2xl shadow-orange/40 hover:brightness-110"
+          className="flex w-64 flex-row justify-center rounded-lg bg-orange p-4 font-[700] text-white shadow-2xl shadow-orange/40 hover:opacity-70"
         >
           <CartIcon fillColor="fill-white" hoverColor="fill-white" />
           <p className="ml-4">Add to Cart</p>
