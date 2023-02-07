@@ -5,6 +5,13 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./index.html", "./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
+    screens: {
+      "sm": "375px",
+      "md": "640px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1536px",
+    },
     colors: {
       white: "hsl(0, 0%, 100%)",
       black: "hsl(0, 0%, 0%)",
@@ -18,6 +25,7 @@ module.exports = {
         400: "hsl(220, 13%, 13%)",
       },
     },
+    fontFamily: "16px",
     extend: {
       fontFamily: {
         sans: ["Kumbh Sans", ...defaultTheme.fontFamily.sans],

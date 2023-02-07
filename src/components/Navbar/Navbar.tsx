@@ -1,6 +1,6 @@
 import NavLinkList from "./NavLinkList";
 import Logo from "./Logo";
-import CartIcon from "./CartIcon";
+import CartIcon from "../CartIcon";
 import Avatar from "../../assets/images/image-avatar.png";
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
         <NavLinkList items={navItems} />
       </div>
       <div className="flex w-28 flex-row items-center justify-between">
-        <CartIcon />
+        <CartIcon fillColor="fill-blue-300" hoverColor="fill-blue-400" />
         <img
           src={Avatar}
           className="w-12 border-2 border-white hover:rounded-full hover:border-2 hover:border-solid hover:border-orange"
