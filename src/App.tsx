@@ -1,14 +1,18 @@
 import Navbar from "./components/Navbar/Navbar";
 import ProductCard from "./components/ProductCard/ProductCard";
+import ProductImage1 from "./assets/images/image-product-1.jpg";
 
 function App() {
   return (
-    <div className="flex w-[1440px] flex-col">
+    <div className="flex w-[1440px] flex-col items-center">
       <div className="flex w-full items-center justify-center">
         <Navbar />
       </div>
-      <div className="flex h-full w-auto flex-row items-center justify-between">
-        <div className="flex h-full w-2/3 items-center justify-center">
+      <div className="flex h-full w-full flex-row items-center justify-evenly">
+        <div className="w-1/3">
+          <img src={ProductImage1} className="rounded-xl" />
+        </div>
+        <div className="flex h-full w-1/3 items-center justify-end">
           <ProductCard
             company="Sneaker Company"
             name="Fall Limited Edition Sneakers"

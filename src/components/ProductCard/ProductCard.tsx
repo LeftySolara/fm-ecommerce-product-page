@@ -12,9 +12,9 @@ const ProductCard = (props: ProductCardProps) => {
   const { company, name, description, regularPrice, salePrice } = props;
 
   return (
-    <div className="flex h-[480px] w-1/2 flex-col justify-evenly">
+    <div className="flex h-[480px] w-full flex-col justify-evenly">
       <p className="font-[700] text-orange">{company}</p>
-      <h1 className="text-4xl font-[700] text-blue-400">{name}</h1>
+      <h1 className="text-5xl font-[700] text-blue-400">{name}</h1>
       <p className="text-blue-300">{description}</p>
       <div>
         <div className="flex w-1/2 flex-row items-center justify-start">
