@@ -28,7 +28,7 @@ const QuantityForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex w-auto flex-row items-center justify-evenly"
+      className="flex w-full flex-row items-center justify-between"
     >
       <div className="flex h-full w-36 flex-row justify-evenly rounded-md bg-blue-100 p-2">
         <button onClick={handleMinus} type="button">
