@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar/Navbar";
 import ProductCard from "./components/ProductCard/ProductCard";
-import ProductImage1 from "./assets/images/image-product-1.jpg";
+import ProductGallery from "./components/ProductGallery/ProductGallery";
 
 function App() {
   return (
@@ -9,9 +9,7 @@ function App() {
         <Navbar />
       </div>
       <div className="flex h-full w-full flex-row items-center justify-evenly">
-        <div className="w-1/3">
-          <img src={ProductImage1} className="rounded-xl" />
-        </div>
+        <ProductGallery />
         <div className="flex h-full w-1/3 items-center justify-end">
           <ProductCard
             company="Sneaker Company"
