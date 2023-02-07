@@ -7,7 +7,7 @@ function App() {
       <div className="flex w-full items-center justify-center">
         <Navbar />
       </div>
-      <div className="flex w-full justify-center">
+      <div className="flex h-full w-full justify-center">
         <ProductCard
           company="Sneaker Company"
           name="Fall Limited Edition Sneakers"
