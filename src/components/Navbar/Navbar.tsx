@@ -16,7 +16,7 @@ const Navbar = () => {
         <CartIcon />
         <img
           src={Avatar}
-          className="w-12 hover:rounded-full hover:border-2 hover:border-solid hover:border-orange"
+          className="w-12 border-2 border-white hover:rounded-full hover:border-2 hover:border-solid hover:border-orange"
         />
       </div>
     </div>
