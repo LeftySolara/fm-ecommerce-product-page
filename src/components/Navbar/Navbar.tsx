@@ -14,7 +14,10 @@ const Navbar = () => {
       </div>
       <div className="flex w-28 flex-row items-center justify-between">
         <CartIcon />
-        <img src={Avatar} className="w-12" />
+        <img
+          src={Avatar}
+          className="w-12 hover:rounded-full hover:border-2 hover:border-solid hover:border-orange"
+        />
       </div>
     </div>
   );
