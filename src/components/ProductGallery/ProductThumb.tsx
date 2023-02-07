@@ -12,12 +12,17 @@ const ProductThumb = (props: ProductThumbProps) => {
       <li className="w-1/5 rounded-xl">
         <button
           type="button"
-          className={`rounded-xl border-4 border-white hover:brightness-110 ${
-            selected ? "border-4 border-orange brightness-110" : ""
+          className={`rounded-xl border-4 border-white ${
+            selected ? "border-4 border-orange" : ""
           }`}
           onClick={handleClick}
         >
-          <img src={src} className="rounded-lg object-cover" />
+          <img
+            src={src}
+            className={`rounded-lg object-cover hover:opacity-30 ${
+              selected ? "opacity-30" : ""
+            }`}
+          />
         </button>
       </li>
     </>
