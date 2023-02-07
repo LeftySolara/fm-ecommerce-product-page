@@ -13,7 +13,7 @@ const ProductCard = (props: ProductCardProps) => {
 
   return (
     <div className="flex h-[480px] w-full flex-col justify-evenly">
-      <p className="font-[700] text-orange">{company}</p>
+      <p className="font-[700] text-orange">{company.toUpperCase()}</p>
       <h1 className="text-5xl font-[700] text-blue-400">{name}</h1>
       <p className="text-blue-300">{description}</p>
       <div>
