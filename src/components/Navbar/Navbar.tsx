@@ -7,7 +7,7 @@ const Navbar = () => {
   const navItems = ["Collections", "Men", "Women", "About", "Contact"];
 
   return (
-    <div className="flex h-24 w-10/12 flex-row justify-between border-b-2 border-solid border-blue-200">
+    <div className="flex h-24 w-10/12 flex-row justify-between border-b-[1px] border-solid border-blue-200 border-opacity-50">
       <div className="flex w-auto flex-row items-center justify-between">
         <Logo />
         <NavLinkList items={navItems} />
