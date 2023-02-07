@@ -5,6 +5,8 @@ import "./globals.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <div className="flex w-[1440px] flex-col items-center">
+      <App />
+    </div>
   </React.StrictMode>
 );

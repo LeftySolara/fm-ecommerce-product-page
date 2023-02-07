@@ -1,35 +1,25 @@
-import QuantityForm from "./QuantityForm";
+import ProductGallery from "../ProductGallery/ProductGallery";
+import ProductInfo from "../ProductInfo/ProductInfo";
+import { Image } from "../../assets/images";
 
 interface ProductCardProps {
-  company: string;
-  name: string;
-  description: string;
-  regularPrice: number;
-  salePrice: number;
+  images: Array<Image>;
+  details: {
+    company: string;
+    name: string;
+    description: string;
+    salePrice: number;
+    regularPrice: number;
+  };
 }
 
 const ProductCard = (props: ProductCardProps) => {
-  const { company, name, description, regularPrice, salePrice } = props;
+  const { images, details } = props;
 
   return (
-    <div className="flex h-[480px] w-full flex-col justify-evenly">
-      <p className="font-[700] text-orange">{company.toUpperCase()}</p>
-      <h1 className="text-5xl font-[700] text-blue-400">{name}</h1>
-      <p className="text-blue-300">{description}</p>
-      <div>
-        <div className="flex w-1/2 flex-row items-center justify-start">
-          <p className="text-3xl font-[700] text-blue-400">
-            ${salePrice.toFixed(2)}
-          </p>
-          <p className="ml-4 rounded-md bg-paleOrange px-2 font-[700] text-orange">
-            {((salePrice / regularPrice) * 100).toFixed(0)}%
-          </p>
-        </div>
-        <p className="font-[700] text-blue-200 line-through">
-          ${regularPrice.toFixed(2)}
-        </p>
-      </div>
-      <QuantityForm />
+    <div className="flex h-full w-full flex-row items-center justify-evenly">
+      <ProductGallery images={images} />
+      <ProductInfo details={details} />
     </div>
   );
 };

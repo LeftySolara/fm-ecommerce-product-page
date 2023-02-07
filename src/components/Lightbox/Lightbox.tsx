@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import IconNext from "./IconNext";
 import IconPrevious from "./IconPrevious";
 import ImageCard from "./ImageCard";
+import Thumbnail from "./Thumbnail";
 
 interface LightboxProps {
   images: Array<string>;
@@ -36,7 +37,7 @@ const Lightbox = (props: LightboxProps) => {
   };
 
   return (
-    <>
+    <div className="flex h-full flex-col items-center justify-center">
       <div
         className="fixed top-0 left-0 z-10 flex h-full w-full items-center justify-center bg-blue-200 bg-opacity-50"
         onClick={handleClick}
@@ -47,18 +48,18 @@ const Lightbox = (props: LightboxProps) => {
           <IconNext handleClick={showNext} />
         </div>
       </div>
-      <div>
+      <div className="z-10 flex flex-row justify-evenly">
         {thumbnails.map((thumbnail) => (
-          <img
-            src={thumbnail}
-            key={thumbnail}
-            onClick={() =>
+          <Thumbnail
+            image={thumbnail}
+            handleClick={() =>
               setSelectedImage(images[thumbnails.indexOf(thumbnail)])
             }
+            key={thumbnail}
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
